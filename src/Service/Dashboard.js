@@ -1,4 +1,4 @@
 import axios from "axios";
 export const fetchDashboardData = () => {
-    return axios.get("http://localhost:8080/api/v1.0/dashboard",{headers: {'Authorization': `Bearer ${localStorage.getItem("token")}`}});
+    return axios.get("https://billing-software-backend-t89w.onrender.com/api/v1.0/dashboard",{headers: {'Authorization': `Bearer ${localStorage.getItem("token")}`}});
 }
